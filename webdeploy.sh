@@ -4,11 +4,11 @@
 #杀死cms进程
 
 killprodir=/app/script/killpro.sh
-softwarerootdir=/app/edn-cms
+softwarerootdir=/app/edn-web
 cmssoftwarename=$1 
-sh $killprodir /app/edn-cms;
+sh $killprodir /app/edn-web;
 
-cd /app/edn-cms/apache-tomcat-7.0.65/webapps/ROOT;
+cd /app/edn-web/apache-tomcat-7.0.65/webapps/ROOT;
 echo "sss"
 rm -rf *;
 cp /app/software/$cmssoftwarename $softwarerootdir/apache-tomcat-7.0.65/webapps/ROOT
